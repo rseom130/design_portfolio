@@ -1,0 +1,63 @@
+/* 게시판 */
+ul.board { /* 게시판 박스 */
+  list-style: none;
+}
+ul.board > li.row { /* 게시판 행 박스 */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  max-height: 143px;
+  overflow: hidden;
+  cursor: pointer;
+}
+ul.board > li.row > .column { /* 게시판 열 박스 */
+  display: flex;
+  flex-direction: column;
+}
+ul.board > li.row > .column.img { /* 게시판 행 이미지 열 */
+  width: 153px;
+  padding: 3px 5px;
+  margin-right: 15px;
+  justify-content: center;
+  border-radius: 15px;
+}
+ul.board > li.row > .column.img > img { /* 게시판 행 이미지 */
+  max-height: 140px;
+  max-width: 100%;
+}
+ul.board > li.row > .column.content { /* 게시판 행 제목, 부제목, 내용 열 */
+  width: 100%;
+}
+ul.board > li.row > .column.content > .title { /* 게시판 행 제목 */
+  font-size: 2rem;
+  color: #343441;
+  font-weight: bold;
+  overflow: hidden;
+}
+ul.board > li.row > .column.content > .subtitle { /* 게시판 행 부제목 */
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #6e6e6e;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+ul.board > li.row > .column.content > .sample { /* 게시판 행 간단내용 */
+  font-size: 0.9rem;
+  color: #777777;
+  overflow: hidden;
+  max-height: 3.8rem;
+}
+ul.board > li.row > .column.register { /* 게시판 행 등록정보 열 */
+  text-align: right;
+  flex-grow: 1;
+  color: #2da38e;
+  width: 100px;
+}
+ul.board > li.row > .column.register > .date { /* 게시판 행 등록정보 날짜 */
+  font-size: 1rem;
+  font-weight: bold;
+}
+ul.boaard > li.row > .column.register > .time { /** 게시판 행 등록정보 시간 */
+  font-size: 0.9rem;
+}
+/* 게시판 끝 */
